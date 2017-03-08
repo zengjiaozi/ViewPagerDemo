@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical">
+
+    <cn.a10086.www.viewpagerdemo.ZengViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#545454"/>
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:checked="true"
+            android:drawableBottom="@drawable/btn_tab_home_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            style="@style/BottomTabStyle"
+            android:drawableBottom="@drawable/btn_tab_news_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_service"
+            style="@style/BottomTabStyle"
+            android:drawableBottom="@drawable/btn_tab_service_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_gov"
+            style="@style/BottomTabStyle"
+            android:drawableBottom="@drawable/btn_tab_gov_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/BottomTabStyle"
+            android:drawableBottom="@drawable/btn_tab_setting_selector"/>
+    </RadioGroup>
+
+</LinearLayout>
